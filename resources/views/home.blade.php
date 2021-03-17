@@ -37,7 +37,7 @@
                         <td>{{$peserta['username']}}</td>
                         <td >{{$peserta['password']}}</td>
                         <td>
-                            <a href={{"edit/".$peserta['id']}}>Update</a> | <a href="#">Send Email</a>
+                            <a href={{"edit/".$peserta['id']}}>Update</a> | <a href="{{"/kirim_email"}}">Send Email</a>
                         </td>
                     </tr>
                     @endforeach

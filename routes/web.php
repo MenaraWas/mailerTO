@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pesertaController;
+use App\Http\Controllers\KirimEmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::get('edit/{id}',[pesertaController::Class,'showData']);
 Route::post('edit',[pesertaController::Class,'update']);
 
 //sending email routes
+Route::get('/kirim_email',[KirimEmailController::class,'index']);
